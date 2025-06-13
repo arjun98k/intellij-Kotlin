@@ -1,5 +1,13 @@
 package OOPS
 
+
+//| Use Case                             | Secondary Constructor? |
+//| ------------------------------------ | ---------------------- |
+//| Multiple ways to create an object    | ✅ Useful               |
+//| Different init logic per constructor | ✅ Useful               |
+//| Java interop                         | ✅ Sometimes needed     |
+//| Just want optional params            | ❌ Use default args     |
+
 class Secondary {
     var name: String = ""
     var id : Int = 0
