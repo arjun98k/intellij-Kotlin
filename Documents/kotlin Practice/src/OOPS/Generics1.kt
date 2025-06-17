@@ -11,6 +11,7 @@ class Generics1<T> (input:T) {
             else -> input // non-number types
         }
         println(age)
+        println(age)
 
     }
 }
