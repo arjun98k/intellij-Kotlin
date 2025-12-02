@@ -1,16 +1,26 @@
 package oops1
 fun main() {
-//    val obj = Op1("aksh", "android king")   // object created
-//  obj.show()
-//    val obj2 = Op1("Pro Android Developer")
+    val obj1 = Engineer("Arjun","seinor Engineer")
+    val obj2 = Engineer("Aditya","It","android")
+
+
+
 }
 
-class Op1(val name:String, val subposition: String) {
-    constructor( occupation: String):this(occupation,"0") {
-     println("i am super $occupation")
+class Engineer(    val name: String,
+                   val designation: String,
+                   val Position: String,
+                    val salary: Int)
+
+{
+    constructor(name: String, designation: String):this(name,designation,"seinor engineer",25000){
+              println("this name of dev $name and $designation")
     }
-    fun show(){
-        println("hello kotlin")
-        println("i am android develop $name and my roll no is $subposition")
+    constructor(name: String,designation: String,Position: String):this(name,designation,Position,25000) {
+             println("this name of developer $name and $designation and holding position $Position and salary $salary")
     }
+
+
+
 }
+
